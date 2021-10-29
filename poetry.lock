@@ -57,6 +57,20 @@ python-versions = ">=3.6, <3.7"
 
 [[package]]
 name = "importlib-metadata"
+version = "0.10"
+description = "Read metadata from Python packages"
+category = "main"
+optional = false
+python-versions = ">=2.7,!=3.0,!=3.1,!=3.2,!=3.3"
+
+[package.dependencies]
+zipp = ">=0.3.2"
+
+[package.extras]
+docs = ["sphinx", "docutils (==0.12)", "rst.linker"]
+
+[[package]]
+name = "importlib-metadata"
 version = "4.8.1"
 description = "Read metadata from Python packages"
 category = "main"
@@ -159,9 +173,21 @@ test = ["shellingham (>=1.3.0,<2.0.0)", "pytest (>=4.4.0,<5.4.0)", "pytest-cov (
 name = "typing-extensions"
 version = "3.10.0.2"
 description = "Backported and Experimental Type Hints for Python 3.5+"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
+
+[[package]]
+name = "zipp"
+version = "0.4.0"
+description = "Pathlib-compatible object wrapper for zip files"
+category = "main"
+optional = false
+python-versions = ">=2.7"
+
+[package.extras]
+docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
+testing = ["pytest (>=3.5,!=3.7.3)", "pytest-checkdocs", "pytest-flake8", "pathlib2", "more-itertools"]
 
 [[package]]
 name = "zipp"
@@ -178,7 +204,7 @@ testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytes
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.6.2,<4.0"
-content-hash = "ee44c49af01dc438ae2619682075663ff94530acfbc3d0e9f42d3460ee14cae8"
+content-hash = "2a81352e248003090f24b58f23ead202fa34e58de88424ba38b84ea47e6d117b"
 
 [metadata.files]
 black = [
@@ -198,6 +224,8 @@ dataclasses = [
     {file = "dataclasses-0.8.tar.gz", hash = "sha256:8479067f342acf957dc82ec415d355ab5edb7e7646b90dc6e2fd1d96ad084c97"},
 ]
 importlib-metadata = [
+    {file = "importlib_metadata-0.10-py2.py3-none-any.whl", hash = "sha256:408598615665eb2cfc0de15b331aca61c28fe9acac94ea8a82661b60a78bbef4"},
+    {file = "importlib_metadata-0.10.tar.gz", hash = "sha256:c36d2fd992bf92ad77fb2d124f8f112f5a4c8bc3fbe28a40545c1a7e3f578850"},
     {file = "importlib_metadata-4.8.1-py3-none-any.whl", hash = "sha256:b618b6d2d5ffa2f16add5697cf57a46c76a56229b0ed1c438322e4e95645bd15"},
     {file = "importlib_metadata-4.8.1.tar.gz", hash = "sha256:f284b3e11256ad1e5d03ab86bb2ccd6f5339688ff17a4d797a0fe7df326f23b1"},
 ]
@@ -301,6 +329,8 @@ typing-extensions = [
     {file = "typing_extensions-3.10.0.2.tar.gz", hash = "sha256:49f75d16ff11f1cd258e1b988ccff82a3ca5570217d7ad8c5f48205dd99a677e"},
 ]
 zipp = [
+    {file = "zipp-0.4.0-py2.py3-none-any.whl", hash = "sha256:139391b239594fd8b91d856bc530fbd2df0892b17dd8d98a91f018715954185f"},
+    {file = "zipp-0.4.0.tar.gz", hash = "sha256:8047e4575ce8d700370a3301bbfc972896a5845eb62dd535da395b86be95dfad"},
     {file = "zipp-3.6.0-py3-none-any.whl", hash = "sha256:9fe5ea21568a0a70e50f273397638d39b03353731e6cbbb3fd8502a33fec40bc"},
     {file = "zipp-3.6.0.tar.gz", hash = "sha256:71c644c5369f4a6e07636f0aa966270449561fcea2e3d6747b8d23efaa9d7832"},
 ]

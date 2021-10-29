@@ -1,0 +1,10 @@
+{
+    "python.pythonPath": ".venv/bin/python",
+    "editor.formatOnSave": true,
+    "python.formatting.provider": "black",
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    }
+}
